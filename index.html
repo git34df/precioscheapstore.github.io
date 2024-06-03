@@ -10,17 +10,28 @@
     <div class="container">
         <h1>Visor de PDF</h1>
         <div class="pdf-viewer">
-            <iframe src="Precios.pdf" width="100%" height="600px"></iframe>
+            <iframe src="LISTA DE PRECIOS DISCOS.pdf" width="100%" height="600px"></iframe>
         </div>
         <div class="buttons">
-            <a href="Precios.pdf" download class="download-button">Descargar PDF</a>
-            <button class="open-button" onclick="openPdf()">Abrir PDF en otra ventana</button>
+            <a href="LISTA DE PRECIOS DISCOS.pdf" download class="download-button">Descargar PDF</a>
+            <button class="open-button" onclick="openPdf('LISTA DE PRECIOS DISCOS.pdf')">Abrir PDF en otra ventana</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Visor de PDF</h1>
+        <div class="pdf-viewer">
+            <iframe src="LISTA DE PRECIOS MEMORIAS.pdf" width="100%" height="600px"></iframe>
+        </div>
+        <div class="buttons">
+            <a href="LISTA DE PRECIOS MEMORIAS.pdf" download class="download-button">Descargar PDF</a>
+            <button class="open-button" onclick="openPdf('LISTA DE PRECIOS MEMORIAS.pdf')">Abrir PDF en otra ventana</button>
         </div>
     </div>
     <script>
-        function openPdf() {
-            window.open('Precios.pdf', '_blank');
+        function openPdf(pdfUrl) {
+            window.open(pdfUrl, '_blank');
         }
     </script>
+  
 </body>
 </html>
